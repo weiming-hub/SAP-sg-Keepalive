@@ -19,12 +19,13 @@ jobs:
       - name: KeepAlive via container
         uses: docker://ghcr.io/uncleluogithub/cf-keepalive:latest
         env:
-          CF_USERNAME: ${{ secrets.CF_USERNAME }}
-          CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
-          CF_API:      ${{ secrets.CF_API }}
-          CF_ORG:      ${{ secrets.CF_ORG }}
-          CF_SPACE:    ${{ secrets.CF_SPACE }}
-          CF_APP:      ${{ secrets.CF_APP }}
+          gh secret set CF_API      --body 'https://api.cf.ap21.hana.ondemand.com'
+          gh secret set CF_ORG      --body '9202e17ctrial'
+          gh secret set CF_SPACE    --body 'dev'
+          gh secret set CF_APP      --body 'free-sgtajllj'
+          gh secret set CF_USERNAME --body 'wei99w88@gmail.com'
+          gh secret set CF_PASSWORD          # 交互输入，不留 history
+
           CF_SET_PROCESS_HC: "true"
           # 调试时打开
           # DEBUG: "1"
