@@ -1,3 +1,22 @@
+Skip to content
+ 
+Search Gists
+Search...
+All gists
+Back to GitHub
+@uncleluogithub
+uncleluogithub/Cloudflare_SAP_APP_KeepaLive_Script.txt Secret
+Created last year • Report abuse
+Code
+Revisions
+1
+Stars
+22
+Forks
+25
+Clone this repository at &lt;script src=&quot;https://gist.github.com/uncleluogithub/083775a84afbff11f1057695ce29fddb.js&quot;&gt;&lt;/script&gt;
+<script src="https://gist.github.com/uncleluogithub/083775a84afbff11f1057695ce29fddb.js"></script>
+Cloudflare_SAP_APP_KeepaLive_Script.txt
 const pad=n=>String(n).padStart(2,"0");
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const json=(o,c=200)=>new Response(JSON.stringify(o),{status:c,headers:{"content-type":"application/json"}});
@@ -164,3 +183,20 @@ export default{
     }
   }
 };
+@weiming-hub
+Comment
+ 
+
+Leave a comment
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
